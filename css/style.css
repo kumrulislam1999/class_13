@@ -1,0 +1,513 @@
+/* Start Common CSS Styling*/
+:root {
+    --common_color: #0f2f44;
+    --secondary_color: #444444;
+    --P_color: #777777;
+    --innerItem_bg: #eeeeee;
+    --btn_hover_color: #ffc712;
+    --white_color: #ffffff;
+    --item_bg_color: #e9e9e9;
+    --shadow_color: #e0e0e0;
+    --nav_a_bg_hover: #fff9e6;
+    --nav_f_a_hover: #ffd54d;
+    --highlight_color: #8484bf;
+    --dark_color: #222222;
+    --light_color: #fefefe;
+    --section_bg: #f5f5f5;
+    --heading_font: 'Abril Fatface', cursive;
+    --secondary_font: 'Ubuntu', sans-serif;
+    --common_font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--common_color);
+    font-family: var(--common_font)
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--common_color);
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading_font)
+}
+
+h4,
+h5,
+h6,
+a {
+    display: inline-block;
+    font-family: var(--secondary_font)
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.w_33 {
+    width: calc(100% / 3);
+}
+
+.btn_radius {
+    padding: 18px 22px;
+    background-color: var(--white_color);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0px 20px 3px var(--shadow_color);
+}
+
+.anchor {
+    background-color: var(--white_color);
+    padding: 16px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 10px 20px 3px var(--shadow_color);
+}
+
+/* End  Common CSS Styling */
+
+/* Start Common Section  CSS Styling */
+
+.sectionHeading h2 {
+    font-size: 32px;
+
+
+}
+
+.sectionHeading h6 {
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.sectionHeading p {
+    font-size: 16px;
+    padding: 32px 0;
+    line-height: 24px;
+}
+
+.sectionDetails h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--first_color)
+}
+
+.sectionDetails p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 32px;
+}
+
+/* End  Common Section CSS Styling */
+
+/* Start top Bar Section CSS Styling */
+#topBarSection {
+    background-color: var(--common_color);
+    padding: 19px 0;
+    color: var(--white_color);
+    font-family: var(--secondary_font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#topBarSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* End top Bar Section CSS Styling */
+
+
+/* Start Header Section CSS Styling*/
+#headerSection {
+    background-color: var(--white_color);
+    position: sticky;
+    top: 0px;
+    left: 0;
+}
+
+#headerSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerSection .navBar li {
+    padding: 0px 9px;
+}
+
+#headerSection .navBar li a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 43px 10px;
+    text-transform: capitalize;
+}
+
+#headerSection .navBar button {
+    width: 30px;
+    height: 30px;
+    font-size: 9px;
+    color: #999999;
+    background-color: var(--white_color);
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+#headerSection .navBar a:hover {
+    background-color: var(--nav_a_bg_hover);
+    color: var(--nav_f_a_hover);
+}
+
+/* End Header Section CSS Styling */
+
+
+
+/* Start Main Section CSS Styling */
+
+/* Start Bannar Section CSS Styling */
+#bannarSection {
+    height: 600px;
+    background: url(./../image/bannar_section_bg_image.jpg) center/cover no-repeat;
+}
+
+#bannarSection .row {
+    align-items: center;
+    height: 100%;
+}
+
+#bannarSection .inner_Container {
+    width: 40%;
+}
+
+#bannarSection .inner_Container h3 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+#bannarSection .inner_Container h1 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+#bannarSection .inner_Container h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 19px;
+    color: var(--highlight_color);
+}
+
+#bannarSection .inner_Container p {
+    font-size: 14px;
+    color: var(--secondary_color);
+    line-height: 24px;
+    padding: 30px 0;
+}
+
+#bannarSection .inner_Container button {
+    width: 49px;
+    height: 49px;
+    border: none;
+    box-shadow: none;
+    border-radius: 50%;
+    background-color: var(--white_color);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#bannarSection .inner_Container a:hover {
+    background-color: var(--highlight_color);
+    box-shadow: none;
+}
+
+/* End Bannar Section CSS Styling */
+
+/* Start About Section CSS Styleing */
+#aboutSection {
+    padding: 100px 0;
+}
+
+#aboutSection .row {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+#aboutSection .sectionDetails p {
+    padding: 0 34px 30px;
+    line-height: 44px;
+}
+
+#aboutSection a {
+    margin: 0 10px;
+}
+
+#aboutSection a:hover {
+    background-color: var(--btn_hover_color);
+    box-shadow: 0 0px 10px var(--btn_hover_color);
+}
+
+/* End About Section CSS Styleing */
+
+/* Start Skills Section CSS Styleing */
+#skillSection {
+    padding-bottom: 100px;
+}
+
+#skillSection .row {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+#skillSection .sectionHeading {
+    text-align: right;
+}
+
+#skillSection .item>img {
+    height: 100%;
+    width: 100%;
+}
+
+#skillSection .sectionDetails .innerItem:first-child {
+    width: calc((100% - 91px));
+    padding-left: 65px;
+
+}
+
+#skillSection .sectionDetails .innerItem:last-child {
+    width: 71px;
+    margin-left: 20;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 5px var(--shadow_color);
+
+}
+
+#skillSection .sectionDetails .innerItem progress {
+    width: 100%;
+    direction: rtl;
+}
+
+#skillSection .sectionDetails .progressBar:nth-child(1) progress {
+    accent-color: #294795;
+}
+
+#skillSection .sectionDetails .progressBar:nth-child(2) progress {
+    accent-color: #5d3b15;
+}
+
+#skillSection .sectionDetails .progressBar:nth-child(3) progress {
+    accent-color: #33491f;
+}
+
+#skillSection .sectionDetails .progressBar:nth-child(4) progress {
+    accent-color: #39295f;
+}
+
+/* End Skills Section CSS Styleing */
+
+/* Start Service Section CSS Styleing */
+#serviceSection {
+    padding: 60px 0;
+    background-color: var(--section_bg);
+}
+
+#serviceSection .sectionHeading {
+    text-align: center;
+    padding: 55px 0;
+}
+
+#serviceSection .row {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#serviceSection .w_33 {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+    background-color: var(--item_bg_color);
+}
+
+#serviceSection .item .innerItem:first-child {
+    width: 100px;
+    text-align: center;
+}
+
+#serviceSection .item .innerItem:last-child {
+    width: calc(100% - 100px);
+    padding: 30px 20px;
+    background-color: var(--innerItem_bg);
+}
+
+
+#serviceSection .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--common_color);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#serviceSection .item .overlay .position {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#serviceSection .item .overlay img {
+    margin: 30px;
+}
+
+#serviceSection .item .overlay h3 {
+    padding-bottom: 43px;
+    color: #ffffff;
+}
+
+#serviceSection .item .overlay .btn_radius {
+    position: absolute;
+    padding: 16px 13px;
+    bottom: -20px;
+    right: 45%;
+    background-color: var(--btn_hover_color);
+    color: var(--common_color);
+    box-shadow: none;
+
+}
+
+#serviceSection .item:hover .overlay {
+    display: block;
+
+}
+
+/* End Service Section CSS Styleing */
+
+/* Start Portfolio Section CSS Styleing */
+#portfolioSection {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#portfolioSection .row {
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+
+#portfolioSection .sectionDetails {
+    text-align: center;
+    padding-top: 60px;
+    height: 100%;
+}
+
+#portfolioSection .item {
+    border-radius: 5px;
+    width: calc((100% - 70px) / 3);
+    position: relative;
+
+}
+
+#portfolioSection .item img {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolioSection .overlay {
+    padding: 60px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    padding: 0;
+}
+
+#portfolioSection .overlay .position {
+    position: relative;
+    height: 100%;
+}
+
+#portfolioSection .overlay img {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolioSection .overlay h4 {
+    font-size: 20px;
+    background-color: var(--white_color);
+    padding: 33px 0;
+    width: 100%;
+}
+
+#portfolioSection .overlay .innerPosition button {
+    position: absolute;
+    top: 50%;
+}
+
+#portfolioSection .overlay .innerPosition button:hover {
+    background-color: var(--btn_hover_color);
+}
+
+#portfolioSection .overlay .innerPosition .left {
+    left: -30px;
+}
+
+#portfolioSection .overlay .innerPosition .right {
+    right: -30px;
+}
+
+#portfolioSection .overlay a {
+    background-color: var(--btn_hover_color);
+    margin-top: 60px;
+}
+
+#portfolioSection .item:hover .overlay {
+    display: block;
+
+}
+
+/* End Portfolio Section CSS Styleing */
+
+/* End Main Section CSS Styling */
