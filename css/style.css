@@ -592,4 +592,93 @@ a {
 
 /* Start Testimonial Section CSS Styling */
 
+
+
+
+/* Start blog Section CSS Styleing */
+#blogSection {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#blogSection .row {
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+
+#blogSection .sectionDetails {
+    padding-top: 60px;
+    height: 100%;
+}
+
+#blogSection .item {
+    border-radius: 5px;
+    width: calc((100% - 70px) / 3);
+    position: relative;
+
+}
+
+#blogSection .item img {
+    width: 100%;
+    height: 100%;
+}
+
+#blogSection .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+
+}
+
+#blogSection .overlay .position {
+    position: relative;
+    height: 100%;
+}
+
+#blogSection .overlay img {
+    width: 100%;
+    height: 100%;
+}
+
+#blogSection .overlay h4 {
+    font-size: 20px;
+    background-color: var(--white_color);
+    padding: 33px 0;
+    width: 100%;
+}
+
+#blogSection .overlay .innerPosition button {
+    position: absolute;
+    top: 50%;
+}
+
+#blogSection .overlay .innerPosition button:hover {
+    background-color: var(--btn_hover_color);
+}
+
+#blogSection .overlay .innerPosition .left {
+    left: -30px;
+}
+
+#blogSection .overlay .innerPosition .right {
+    right: -30px;
+}
+
+#blogSection .overlay a {
+    background-color: var(--btn_hover_color);
+    margin-top: 60px;
+}
+
+#blogSection .item:hover .overlay {
+    display: block;
+
+}
+
+/* End Blog Section CSS Styleing */
 /* End Main Section CSS Styling */
